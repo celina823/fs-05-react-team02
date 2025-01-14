@@ -254,7 +254,7 @@ export function PokemonGet({ pokemonId = 413 }) {
   if (loading) return <div>로딩중!</div>;
   if (!pokemonData) return <div>포켓몬 없음</div>;
 
-  console.log("pokemondata.egg확인용", pokemonData.egg_groups);
+  // console.log("pokemondata.egg확인용", pokemonData.egg_groups);
   //리턴값
   return (
     <div id="pokemonTextZone">
