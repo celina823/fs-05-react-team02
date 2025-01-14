@@ -84,7 +84,6 @@
 }
 
 #CardMyIntro {
-  width: 100%;
   box-sizing: border-box;
   padding: 5px;
   white-space: nowrap;
@@ -136,6 +135,8 @@
 }
 
 #pokemonImage {
+  width: 200px;
+  height: 200px;
   display: flex;
   justify-content: center;
 }
