@@ -27,7 +27,7 @@ export function PokemonImageGet({ pokemonId = 413 }) {
   if (loading) return <div>로딩중!</div>;
 
   return (
-    <div>
+    <div id="pokemonImageZone">
       {pokemonImage ? (
         <img
           id="pokemonImage"

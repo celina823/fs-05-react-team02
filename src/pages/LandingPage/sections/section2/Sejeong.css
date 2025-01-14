@@ -1,62 +1,98 @@
 @import "../../../../styles/color.css";
+
 /*다른 팀원들 css에 따라 SejeongWrapper에 padding 추가*/
 #SejeongWrapper {
   width: 100%;
+  height: 100%;
+  padding: 80px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 20px;
-}
-
-#PokemonCardWrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 첫 번째 줄에 4개의 열 */
-  grid-template-rows: auto; /* 높이는 자동으로 조정 */
-  gap: 12px; /* 카드 간 간격 */
-  justify-items: center; /* 항목들을 가운데 정렬 */
 }
 
 #SejeongSmallTitle {
   color: var(--primary100);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 #SejeongTitle {
   margin-bottom: 36px;
+  text-align: center;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 10% 10%;
+  }
+  100% {
+    background-position: 90% 90%;
+  }
+}
+
+#PokemonCardWrapper {
+  width: auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); /* 첫 번째 줄에 4개의 열 */
+  grid-template-rows: auto; /* 높이는 자동으로 조정 */
+  gap: 30px 10px; /* 카드 간 간격 */
+  justify-items: center; /* 항목들을 가운데 정렬 */
 }
 
 #PokemonCardZone {
-  background-color: var(--gray300);
-  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1.4px solid var(--gray400);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(-30deg, var(--gray900) 0%, #ffffff 100%);
+  background-size: 200% 200%;
+  animation: gradientAnimation 1s linear infinite alternate;
 }
 
 /*카드 내부*/
 /*카드 내부-팀원이름줄*/
 #CardMyNameZone {
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--gray900);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  padding: 10px;
+  padding: 12px;
   border-radius: 12px;
+  gap: 5px;
 }
 
 #CardMyName {
   white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+  color: #ffffff;
 }
 
 #CardMyIntro {
-  color: var(--primary100);
-  background-color: var(--primary200);
-  padding: 10px;
+  padding: 5px;
+  white-space: nowrap;
+  background-color: var(--gray400);
+  color: var(--gray900);
+  border: 1px solid var(--gray900);
   border-radius: 12px;
+}
+
+#PokemonCardZ {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#pokemonImageZone {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #pokemonNumAndType {
@@ -67,8 +103,15 @@
 }
 
 #pokemonId {
+  white-space: nowrap;
+  width: fit-content;
+  padding: 5px;
   display: flex;
   text-align: right;
+  border: 1px solid;
+  border-radius: 50px;
+  background-color: var(--gray900);
+  color: #ffffff;
 }
 
 #PokemonTypeIcon {
@@ -89,10 +132,17 @@
   flex-direction: row;
 }
 
+#pokemonTextZone {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--gray400);
+  padding: 15px;
+  border-radius: 12px;
+}
+
 /* Pulse 애니메이션 정의 */
 .animationPokemon {
   display: flex;
-  border-radius: 100%;
   height: 100px;
   width: 100px;
   margin: auto;
@@ -100,7 +150,7 @@
 }
 
 .animationPokemon:hover {
-  filter: saturate(200%);
-  transform: scale(1.1);
+  filter: saturate(150%);
+  transform: scale(2);
   cursor: pointer;
 }

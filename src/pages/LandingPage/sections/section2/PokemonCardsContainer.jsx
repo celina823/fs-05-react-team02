@@ -52,12 +52,12 @@ export function PokemonCardsContainer() {
           }
         >
           <div id="CardMyNameZone">
-            <div id="CardMyName" className={typoStyles.textLgBold}>
+            <div id="CardMyName" className={typoStyles.text3xlBold}>
               {person.name}
             </div>
             <div
               id="CardMyIntro"
-              className={typoStyles.textMdBold}
+              className={typoStyles.textXlSemibold}
               onClick={() => handleIntroClick(index)} // intro 클릭 시 pokemonId 변경
               style={
                 person.name === "나의 포켓몬은?" ? { cursor: "pointer" } : {}

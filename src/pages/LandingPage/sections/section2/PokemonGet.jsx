@@ -265,21 +265,21 @@ export function PokemonGet({ pokemonId = 413 }) {
           no. {pokemonData.id}
         </p>
       </div>
-      <p className={typoStyles.textLgBold}>
+      <p className={typoStyles.text2xlBold}>
         {getPokemonName(pokemonData.names)}
       </p>
       {/* <p>Base Happiness: {pokemonData.base_happiness}</p>
       <p>Is Legendary: {pokemonData.is_legendary ? "Yes" : "No"}</p> */}
-      <p id="pokemonType" className={typoStyles.textMdBold}>
+      <p id="pokemonType" className={typoStyles.textLgMedium}>
         #속성
       </p>
-      <p id="pokemonTypeText" className={typoStyles.textMdRegular}>
+      <p id="pokemonTypeText" className={typoStyles.textMdMedium}>
         {getType(pokemonData.egg_groups).join(", ")}
       </p>
-      <p id="pokemonFlavor" className={typoStyles.textMdBold}>
+      <p id="pokemonFlavor" className={typoStyles.textLgMedium}>
         #특성
       </p>
-      <p id="pokemonFlavorText" className={typoStyles.textMdRegular}>
+      <p id="pokemonFlavorText" className={typoStyles.textMdMedium}>
         {getKoreanFlavorText(pokemonData.flavor_text_entries)}
       </p>
     </div>

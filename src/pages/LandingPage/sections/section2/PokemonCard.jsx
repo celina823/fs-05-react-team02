@@ -5,7 +5,7 @@ import { typoStyles } from "../../../../utils/Typo/Typo";
 
 export function PokemonCard({ pokemonId }) {
   return (
-    <div id="PokemonCardZone">
+    <div id="PokemonCardZ">
       <PokemonImageGet pokemonId={pokemonId} />
       <PokemonGet pokemonId={pokemonId} />
     </div>
