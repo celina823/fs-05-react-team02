@@ -4,21 +4,26 @@
 #SejeongWrapper {
   width: 100%;
   height: 100%;
-  padding: 80px;
   box-sizing: border-box;
-  display: flex;
+  padding: 80px 20px;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  place-items: center;
 }
 
 #SejeongSmallTitle {
+  width: 100%;
+  box-sizing: border-box;
   color: var(--primary100);
   margin-bottom: 10px;
   text-align: center;
 }
 
 #SejeongTitle {
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 36px;
   text-align: center;
 }
@@ -33,10 +38,10 @@
 }
 
 #PokemonCardWrapper {
-  width: auto;
+  width: 100%;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(4, 2fr); /* 첫 번째 줄에 4개의 열 */
+  grid-template-columns: repeat(2, 1fr); /* 첫 번째 줄에 4개의 열 */
   grid-template-rows: auto; /* 높이는 자동으로 조정 */
   gap: 30px 10px; /* 카드 간 간격 */
   justify-items: center; /* 항목들을 가운데 정렬 */
@@ -45,7 +50,7 @@
 #PokemonCardZone {
   width: 100%;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 10px;
   border: 1.4px solid var(--gray400);
   border-radius: 12px;
   display: flex;
@@ -66,23 +71,28 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 8px;
   border-radius: 12px;
   gap: 5px;
 }
 
 #CardMyName {
+  width: 100%;
+  box-sizing: border-box;
   white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
   color: #ffffff;
 }
 
 #CardMyIntro {
+  width: 100%;
+  box-sizing: border-box;
   padding: 5px;
   white-space: nowrap;
   background-color: var(--gray400);
   color: var(--gray900);
   border: 1px solid var(--gray900);
   border-radius: 12px;
+  text-align: center;
 }
 
 #PokemonCardZ {
@@ -96,6 +106,8 @@
 }
 
 #pokemonNumAndType {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -103,6 +115,8 @@
 }
 
 #pokemonId {
+  width: 100%;
+  box-sizing: border-box;
   white-space: nowrap;
   width: fit-content;
   padding: 5px;
@@ -116,6 +130,7 @@
 
 #PokemonTypeIcon {
   width: 40px;
+  box-sizing: border-box;
   height: 40px;
   padding: 2px;
 }
@@ -123,11 +138,11 @@
 #pokemonImage {
   display: flex;
   justify-content: center;
-  width: 200px;
-  height: 200px;
 }
 
 #pokemonType {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
 }
@@ -136,7 +151,7 @@
   width: 100%;
   box-sizing: border-box;
   background-color: var(--gray400);
-  padding: 15px;
+  padding: 10px;
   border-radius: 12px;
 }
 
